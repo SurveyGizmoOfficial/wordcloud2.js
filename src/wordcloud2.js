@@ -514,7 +514,7 @@ if (!window.clearImmediate) {
       // fontSize === 0 means weightFactor function wants the text skipped,
       // and size < minSize means we cannot draw the text.
       var debug = false;
-      var fontSize = settings.weightFactor(weight);
+      var fontSize = settings.weightFactor(weight, word);
       if (fontSize <= settings.minSize) {
         return false;
       }
